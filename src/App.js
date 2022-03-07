@@ -1,16 +1,25 @@
 import "./App.css";
 import Search from "./Search";
+import Forecast from "./Forecast";
+import Current from "./Current";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Forecast from "./Forecast";
 
 export default function App() {
-  const day = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+  const day = [
+    "Monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
   return (
     <div className="App">
       <div className="container">
         <Search />
-
+        <Current />
         <div className="row">
           <div className="col-2">
             <Forecast day={day[0]} />
@@ -23,15 +32,23 @@ export default function App() {
           </div>
           <div className="col-2">
             <Forecast day={day[3]} />
-          </div>{" "}
+          </div>
           <div className="col-2">
-            <Forecast day={day[5]} />
-          </div>{" "}
-          <div className="col-2">
-            <Forecast day={day[6]} />
+            <Forecast day={day[4]} />
           </div>
         </div>
       </div>
+      <span>
+        open sourced on{" "}
+        <a
+          href="https://github.com/CaileyManktelow/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>{" "}
+        by Cailey Manktelow{" "}
+      </span>
     </div>
   );
 }

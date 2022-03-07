@@ -1,16 +1,14 @@
 import React from "react";
 import "./Forecast.css";
-import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Forecastprops(props) {
+export default function Forecast(props) {
   return (
     <div className="Dispaly-forecast">
-      <div className="col-md-2">
-        <ul>
-          <li>{props.day}</li>
-          <li> 1°C</li>
-        </ul>
-      </div>
+      <ul>
+        <li>{props.day}</li>
+        <li> 1°C</li>
+      </ul>
     </div>
   );
 }

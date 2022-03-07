@@ -85,3 +85,9 @@ li {
 .conditions {
   padding: 0;
 }
+.forecast {
+  display: flex;
+}
+.currentTemperature {
+  font-size: 35px;
+}
