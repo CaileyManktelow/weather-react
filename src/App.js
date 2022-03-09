@@ -3,7 +3,7 @@ import Search from "./Search";
 import Forecast from "./Forecast";
 import Current from "./Current";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
   const day = [
