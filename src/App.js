@@ -15,11 +15,12 @@ export default function App() {
     "Saturday",
     "Sunday",
   ];
+
   return (
     <div className="App">
       <div className="container">
         <Search />
-        <Current />
+        <Current defaultCity="Montreal" />
         <div className="row">
           <div className="col-2">
             <Forecast day={day[0]} />
