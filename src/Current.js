@@ -7,8 +7,6 @@ export default function Current(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response);
-
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
