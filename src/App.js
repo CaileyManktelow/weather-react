@@ -1,7 +1,6 @@
 import "./App.css";
-import Search from "./Search";
 import Forecast from "./Forecast";
-import Current from "./Current";
+import Weather from "./Weather";
 
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -19,8 +18,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Search />
-        <Current defaultCity="Montreal" />
+        <Weather defaultCity="Montreal" />
         <div className="row">
           <div className="col-2">
             <Forecast day={day[0]} />
@@ -38,6 +36,7 @@ export default function App() {
             <Forecast day={day[4]} />
           </div>
         </div>
+        <br />
       </div>
       <span>
         open sourced on{" "}
