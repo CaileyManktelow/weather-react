@@ -4,16 +4,6 @@ import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
-  const day = [
-    "Monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
-
   return (
     <div className="App">
       <div className="container">
