@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./Forecast.css";
 import axios from "axios";
 import ForecastData from "./ForecastData";
+
 export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecastData, setForecastData] = useState(null);
   function handleResponse(response) {
+    console.log(response.data);
     setForecastData(response.data.daily);
     setLoaded(true);
   }
@@ -14,7 +16,12 @@ export default function Forecast(props) {
     return (
       <div className="Forecast">
         <div className="row">
-          <ForecastData data={forecastData} />
+          <ForecastData data={forecastData[0]} />
+          <ForecastData data={forecastData[1]} />
+          <ForecastData data={forecastData[2]} />
+          <ForecastData data={forecastData[3]} />
+          <ForecastData data={forecastData[4]} />
+          <ForecastData data={forecastData[5]} />
         </div>
       </div>
     );
