@@ -9,7 +9,7 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="Montreal" />
       </div>
-      <span>
+      <footer>
         open sourced on{" "}
         <a
           href="https://github.com/CaileyManktelow/weather-react"
@@ -19,7 +19,7 @@ export default function App() {
           Github
         </a>{" "}
         by Cailey Manktelow{" "}
-      </span>
+      </footer>
     </div>
   );
 }

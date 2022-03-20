@@ -1,3 +1,9 @@
 .forecast {
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+.forecast-low {
+  opacity: 70%;
+  margin-left: 10px;
 }
