@@ -23,7 +23,6 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
   function handleResponse(response) {
-    console.log(response);
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,

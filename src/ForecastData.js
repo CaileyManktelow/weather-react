@@ -23,7 +23,7 @@ export default function ForecastData(props) {
   }
 
   return (
-    <div className="ForecastData col-2">
+    <div className="ForecastData col-sm">
       <div className="forecast-day">
         <Day />
       </div>

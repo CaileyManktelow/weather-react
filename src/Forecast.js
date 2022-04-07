@@ -12,7 +12,6 @@ export default function Forecast(props) {
   }, [props.coordinates]);
 
   function handleResponse(response) {
-    console.log(response.data);
     setForecastData(response.data.daily);
     setLoaded(true);
   }
@@ -26,7 +25,6 @@ export default function Forecast(props) {
           <ForecastData data={forecastData[2]} />
           <ForecastData data={forecastData[3]} />
           <ForecastData data={forecastData[4]} />
-          <ForecastData data={forecastData[5]} />
         </div>
       </div>
     );
